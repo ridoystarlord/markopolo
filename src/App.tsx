@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import PostContainer from './components/PostContainer/PostContainer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AddNewPost from './components/AddNewPost/AddNewPost';
+import UpdatePost from './components/UpdatePost/UpdatePost';
+import DeletePost from './components/DeletePost/DeletePost';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<PostContainer />} />
+          <Route path="/add-new" element={<AddNewPost />} />
+          <Route path="/update" element={<UpdatePost />} />
+          <Route path="/delete" element={<DeletePost />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

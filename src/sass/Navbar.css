@@ -1,0 +1,98 @@
+header nav {
+  background-color: lightgray;
+  height: 80px;
+  width: 100vw;
+}
+
+header nav .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 65px;
+  cursor: pointer;
+  display: none;
+}
+
+header nav #check {
+  display: none;
+}
+
+header nav label {
+  color: black;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+header nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  line-height: 65px;
+  margin: 0 5px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 0 13px 4px;
+  border-radius: 3px;
+  border-radius: 3px;
+}
+
+header nav ul li a.active, header nav ul li a:hover {
+  background-color: #e0e0e0;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 688px) {
+  header nav {
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  header nav .checkbtn {
+    display: block;
+  }
+  header nav .logo {
+    font-size: 20px;
+    padding: 0;
+  }
+  header nav #check:checked ~ ul {
+    left: 0;
+  }
+  header nav ul {
+    position: fixed;
+    width: 90%;
+    height: 100vh;
+    background-color: lightgray;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  header a:hover,
+  header a.active {
+    background: none;
+    color: black;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

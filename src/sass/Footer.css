@@ -1,0 +1,13 @@
+.footer {
+  margin-top: 20px;
+  background-color: lightgray;
+  padding: 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Footer.css.map */

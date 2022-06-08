@@ -1,0 +1,103 @@
+header nav {
+    background-color: lightgray;
+    height: 80px;
+    width: 100vw;
+
+    & .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 65px;
+        cursor: pointer;
+        display: none;
+      }
+
+    #check {
+    display: none;
+  }
+
+    & label {
+        color: black;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+      }
+    & ul {
+        float: right;
+        margin-right: 20px;
+
+        & li {
+            display: inline-block;
+            line-height: 65px;
+            margin: 0 5px;
+
+            & a {
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                padding: 0 13px 4px;
+                border-radius: 3px;
+                border-radius: 3px;
+                &.active, &:hover{
+                    background-color: #e0e0e0;
+                    color: black;
+                    transition: 0.5s;
+                }
+              }
+
+          }
+
+      }
+  }
+
+  @media only screen and (max-width: 688px) {
+    header nav {
+      width: 90%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      & .checkbtn {
+        display: block;
+      }
+    //   & label {
+    //     padding: 0 15px;
+    //   }
+      & .logo {
+        font-size: 20px;
+        padding: 0;
+      }
+      #check:checked ~ ul {
+        left: 0;
+      }
+      & ul {
+        position: fixed;
+        width: 90%;
+        height: 100vh;
+        background-color: lightgray;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        & li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+
+            & a {
+                font-size: 20px;
+              }
+          }
+
+      }
+    }
+    header a:hover,
+    header a.active {
+      background: none;
+      color: black;
+    }
+    
+  }
