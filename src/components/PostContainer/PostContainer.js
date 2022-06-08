@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../../sass/PostContainer.scss';
 
 const PostContainer = () => {
 

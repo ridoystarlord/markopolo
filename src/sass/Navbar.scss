@@ -1,5 +1,5 @@
 header nav {
-    background-color: lightgray;
+    background-color: #90B319;
     height: 80px;
     width: 100vw;
 
@@ -17,7 +17,7 @@ header nav {
   }
 
     & label {
-        color: black;
+        color: white;
         font-size: 35px;
         line-height: 80px;
         padding: 0 100px;
@@ -34,14 +34,14 @@ header nav {
 
             & a {
                 text-decoration: none;
-                color: black;
+                color: white;
                 font-size: 20px;
                 padding: 0 13px 4px;
                 border-radius: 3px;
                 border-radius: 3px;
                 &.active, &:hover{
-                    background-color: #e0e0e0;
-                    color: black;
+                    background-color: #E3752D;
+                    color: white;
                     transition: 0.5s;
                 }
               }

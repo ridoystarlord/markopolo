@@ -1,5 +1,5 @@
 header nav {
-  background-color: lightgray;
+  background-color: #90B319;
   height: 80px;
   width: 100vw;
 }
@@ -18,7 +18,7 @@ header nav #check {
 }
 
 header nav label {
-  color: black;
+  color: white;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
@@ -38,7 +38,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 20px;
   padding: 0 13px 4px;
   border-radius: 3px;
@@ -46,8 +46,8 @@ header nav ul li a {
 }
 
 header nav ul li a.active, header nav ul li a:hover {
-  background-color: #e0e0e0;
-  color: black;
+  background-color: #E3752D;
+  color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

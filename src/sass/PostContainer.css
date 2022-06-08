@@ -43,6 +43,7 @@
   width: 30vw;
   background: #ffffff;
   border-radius: 15px;
+  border: 1px solid #90B319;
   -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
