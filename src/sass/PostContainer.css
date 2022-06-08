@@ -38,6 +38,11 @@
   grid-row-gap: 27px;
 }
 
+.post-container .post-link {
+  text-decoration: none;
+  color: black;
+}
+
 .post-container .post {
   padding: 15px;
   width: 30vw;

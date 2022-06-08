@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<PostContainer />} />
           <Route path="/add-new" element={<AddNewPost />} />
-          <Route path="/update" element={<UpdatePost />} />
+          <Route path="/update/:id" element={<UpdatePost />} />
           <Route path="/delete" element={<DeletePost />} />
         </Routes>
         <Footer />

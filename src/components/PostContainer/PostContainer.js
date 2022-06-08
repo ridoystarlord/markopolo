@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../sass/PostContainer.scss';
 
 const PostContainer = () => {
@@ -39,12 +40,15 @@ const PostContainer = () => {
             <div class="post-container">
                 {
                     allPost.map((post,index)=>
-                        <div class="post" key={index}>
-                            <h2>{post?.title}</h2>
-                            <p>
-                                {post?.body}
-                            </p>
-                        </div>
+                            <div class="post" key={index}>
+                                <h2>{post?.title}</h2>
+                                <p>
+                                    {post?.body}
+                                </p>
+                                <Link className='post-link' to={`/update/${post.id}`}>
+                                    <button>Edit</button> 
+                                </Link>
+                            </div>
                     )
                 }
             </div>

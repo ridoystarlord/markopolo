@@ -29,6 +29,11 @@
     grid-column-gap: 27px;
     grid-row-gap: 27px;
 
+    & .post-link{
+        text-decoration: none;
+        color: black;
+    }
+
     & .post{
         padding: 15px;
         width: 30vw;
@@ -43,6 +48,7 @@
         & p{
             text-align: justify;  
         }
+        
     }
 }
 

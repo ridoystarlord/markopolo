@@ -18,9 +18,9 @@ const Navbar = () => {
                     <li>
                         <Link to="/add-new">Add New Post</Link>
                     </li>
-                    <li>
-                        <Link to="/update">Update Post</Link>
-                    </li>
+                    {/* <li>
+                        <Link to="/update/:id">Update Post</Link>
+                    </li> */}
                     <li>
                         <Link to="/delete">Delete Post</Link>
                     </li>
